@@ -20,4 +20,5 @@ Este foi um exercício de desenvolvimento front-end com foco em _HTML semântico
 - _LinkedIn:_ [www.linkedin.com/in/igorgrave]
 
 - Renan dos Reis Santos rm 568540
-- _Github:_ [https://www.linkedin.com/in/renansantos0/] -_LinkedIn:_ [https://github.com/RenanSantos0]
+- _Github:_ [https://www.linkedin.com/in/renansantos0/] 
+-_LinkedIn:_ [https://github.com/RenanSantos0]
