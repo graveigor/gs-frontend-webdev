@@ -109,28 +109,10 @@ header .container {
     align-items: center;
 }
 
-.logo {
-    font-size: 28px;
-    font-weight: 900;
-    /* Aqui falta o ícone 'Y' do logo. 
-       Para simplicidade, deixamos só o texto. */
-}
-
 .main-nav {
     display: flex;
     align-items: center;
     gap: 30px;
-}
-
-.lang-switch {
-    display: flex;
-    gap: 15px;
-    font-weight: 700;
-}
-
-.lang-switch .active {
-    /* Simula o 'PT' estar selecionado (mais escuro/negrito) */
-    font-weight: 900;
 }
 
 .nav-buttons {
