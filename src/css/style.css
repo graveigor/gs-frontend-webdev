@@ -1,0 +1,189 @@
+/* ======================= 
+   CONFIGURAÇÕES GLOBAIS E VARIÁVEIS
+======================== */
+
+/* Define as cores e fontes principais para fácil reutilização */
+:root {
+    --bg-color: #f7f5f2; /* O bege de fundo */
+    --main-color: #000000; /* O preto principal */
+    --light-color: #ffffff; /* O branco puro */
+    --secondary-bg: #e0e0e0; /* Cinza claro do botão "Recrutador" */
+    
+    --main-font: 'Inter', sans-serif;
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--main-font);
+    background-color: var(--bg-color);
+    color: var(--main-color);
+    overflow-x: hidden; /* Evita scroll horizontal */
+}
+
+a {
+    text-decoration: none;
+    color: inherit; /* Links herdam a cor do parente */
+}
+
+ul {
+    list-style: none;
+}
+
+h1, h2 {
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+/* Classe utilitária para centralizar conteúdo */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ======================= 
+   COMPONENTES (BOTÕES)
+======================== */
+.btn {
+    display: inline-block;
+    padding: 10px 24px;
+    border-radius: 5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-align: center;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.btn-dark {
+    background-color: var(--main-color);
+    color: var(--light-color);
+    border-color: var(--main-color);
+}
+
+.btn-dark:hover {
+    background-color: var(--light-color);
+    color: var(--main-color);
+}
+
+.btn-light {
+    background-color: var(--secondary-bg);
+    color: var(--main-color);
+    border-color: var(--main-color);
+}
+
+.btn-light:hover {
+    background-color: var(--main-color);
+    color: var(--secondary-bg);
+}
+
+.btn-large {
+    padding: 14px 32px;
+    font-size: 16px;
+}
+
+/* ======================= 
+   SECÇÃO 1: HEADER E HERO
+======================== */
+.hero-wrapper {
+    /* Cor de fundo preta para o header, que se estende até o footer */
+    /* Na verdade, o header tem fundo bege. O footer é preto. */
+    /* A secção hero inteira tem o fundo bege */
+    width: 100%;
+}
+
+header {
+    padding: 30px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 900;
+    /* Aqui falta o ícone 'Y' do logo. 
+       Para simplicidade, deixamos só o texto. */
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.lang-switch {
+    display: flex;
+    gap: 15px;
+    font-weight: 700;
+}
+
+.lang-switch .active {
+    /* Simula o 'PT' estar selecionado (mais escuro/negrito) */
+    font-weight: 900;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+/* --- Hero --- */
+.hero {
+    min-height: 80vh;
+    padding: 50px 0;
+}
+
+.hero .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero-content h1 {
+    font-size: 64px;
+    line-height: 1.2;
+}
+
+.hero-content .underline {
+    /* A palavra "NETWORK" é sublinhada */
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+}
+
+.hero-content p {
+    font-size: 24px;
+    margin: 20px 0 30px;
+}
+
+.hero-graphics {
+    display: flex;
+    align-items: flex-end; /* Alinha as barras pela base */
+    gap: 30px;
+}
+
+.bar {
+    background-color: var(--main-color);
+    width: 60px;
+    border-radius: 30px; /* Faz as pontas arredondadas */
+}
+
+/* Tamanhos das barras */
+.bar-sm { height: 250px; }
+.bar-md { height: 350px; }
+.bar-lg { height: 450px; }
